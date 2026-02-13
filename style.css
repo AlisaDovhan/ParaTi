@@ -48,3 +48,10 @@ button {
 body.bg-green {
     background-color: #d4f4d4;
 }
+
+.subtext {
+    margin-top: -10px;
+    font-size: 18px;
+    color: #ff4d6d;
+    font-weight: bold;
+}
