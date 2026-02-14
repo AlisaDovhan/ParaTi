@@ -28,7 +28,7 @@ button {
 }
 
 #siBtn {
-    background-color: #009705;
+    background-color: #009705; /* Verde */
     color: white;
 }
 
@@ -37,7 +37,7 @@ button {
 }
 
 #noBtn {
-    background-color: #FF5733;
+    background-color: #FF5733; /* Rojo */
     color: white;
 }
 
@@ -47,11 +47,4 @@ button {
 
 body.bg-green {
     background-color: #d4f4d4;
-}
-
-.subtext {
-    margin-top: -10px;
-    font-size: 18px;
-    color: #ff4d6d;
-    font-weight: bold;
 }
