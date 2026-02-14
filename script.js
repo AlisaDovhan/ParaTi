@@ -1,7 +1,9 @@
 document.addEventListener('DOMContentLoaded', () => {
     let noButtonState = 0; // стан кнопки "No"
+
     const siBtn = document.getElementById('siBtn');
     const noBtn = document.getElementById('noBtn');
+    const subtext = document.getElementById('subtext'); // ← текст який треба сховати
 
     const happyGifs = [
         'happyGifContainer',
@@ -47,6 +49,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Клік на "Sí"
     siBtn.addEventListener('click', () => {
+
+        // Ховаємо текст "No se aceptan negativas"
+        if (subtext) {
+            subtext.style.display = 'none';
+        }
+
         // Ховаємо стартовий gif
         document.getElementById('gifContainer').style.display = 'none';
 
@@ -64,6 +72,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Клік на "No"
     noBtn.addEventListener('click', () => {
+
         // Ховаємо стартовий gif
         document.getElementById('gifContainer').style.display = 'none';
 
@@ -78,4 +87,5 @@ document.addEventListener('DOMContentLoaded', () => {
 
         noButtonState++;
     });
+
 });
